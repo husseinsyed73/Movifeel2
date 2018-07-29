@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.husse.movifeel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="MoviFeel"
+
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name="help.people.husse.movifeel.MainActivity"
+            android:label="MoviFeel"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity
+            android:name="help.people.husse.movifeel.Start_screen"
+            android:label="MoviFeel"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="help.people.husse.movifeel.Showing_data"
+            android:label="@string/title_activity_showing_data"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            ></activity>
+    </application>
+
+</manifest>
